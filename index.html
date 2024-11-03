@@ -13,67 +13,41 @@
                 <header>
                     <h1>Dashboard</h1>
                 </header>
-                <ul>
-                    <li>
-                        <button class="menu-button">
-                            <span class="menu-icon">🏡</span>
-                            <span class="menu-item">Home</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="menu-button">
-                            <span class="menu-icon">👤</span>
-                            <span class="menu-item">Profile</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="menu-button">
-                            <span class="menu-icon">📫</span>
-                            <span class="menu-item">Message</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="menu-button">
-                            <span class="menu-icon">✅</span>
-                            <span class="menu-item">Task</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="menu-button">
-                            <span class="menu-icon">🌐</span>
-                            <span class="menu-item">Community</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="menu-button">
-                            <span class="menu-icon">⚙️</span>
-                            <span class="menu-item">Settings</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="menu-button">
-                            <span class="menu-icon">🛟</span>
-                            <span class="menu-item">Support</span>
-                        </button>
-                    </li>
-                    <li>
-                        <button class="menu-button">
-                            <span class="menu-icon">🔐</span>
-                            <span class="menu-item">Privacy</span>
-                        </button>
-                    </li>
-                </ul>
-                
+                <div id="dashboard-btn">
+                    <li><button class="menu-button">🏡 Home</button></li>
+                    <li><button class="menu-button">👤 Profile</button></li>
+                    <li><button class="menu-button">📫 Message</button></li>
+                    <li><button class="menu-button">✅ Task</button></li>
+                    <li><button class="menu-button">🌐 Community</button></li>
+                    <li><button class="menu-button">⚙️ Settings</button></li>
+                    <li><button class="menu-button">🛟 Support</button></li>
+                    <li><button class="menu-button">🔐 Privacy</button></li>
+                </div> 
             </section>
             
             <section class="header-section" id="header-section">
-                <h2>Header</h2>
-                <div>Search Bar</div>
-                <div>Profile Info Logo</div>
-                <div>Profile Enlarged</div>
-                <button type="button">New</button>
-                <button type="button">Upload</button>
-                <button type="button">Share</button>
+                <div class="search-container">
+                    <input type="text" placeholder="Search..." class="search-bar"/>
+                    <button class="search-button">
+                        <img src="../Dashboard/resources/magnify.png" alt="search icon">
+                    </button>
+                </div>
+                <div class="profile-info">
+                    <a href="https://github.com/Aman11b" target="Github" class="profile-link-small">
+                        <img src="../Dashboard/resources/github-mark-white.png" alt="Gituhub" class="profile-icon-small"/>
+                        <span class="profile-name-small">@Aman11b</span>
+                    </a>
+                </div>
+                <div class="profile-enlarged">
+                    <a href="https://github.com/Aman11b" target="Github" class="profile-link-large">
+                        <img src="../Dashboard/resources/181315037.jpg" alt="Gituhub" class="profile-icon"/>
+                        <span class="profile-name">@Aman11b</span>
+                    </a>
+
+                </div>
+                <button type="button" class="styled-button">New</button>
+                <button type="button" class="styled-button">Upload</button>
+                <button type="button" class="styled-button">Share</button>
             </section>
             
             <section class="project-content" id="project-content" aria-label="Project content">
@@ -135,10 +109,6 @@
             
 
     </div>
-            
-    <footer class="footer-cover">
-        <p>Footer Content</p>
-    </footer>
 
 
     <script src="../Dashboard/main.js"></script>
